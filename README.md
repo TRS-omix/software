@@ -5,16 +5,16 @@
 * Using TRS-omix
 
 ## General info
-This repository contains code and TRS-omix software to search microsatellite elements – trinucleotide repeat sequences (`TRS`) in files of `FASTA type`. This code accompanies the paper: Marta Majchrzak, Sebastian Sakowski, Jacek Waldmajer, and Pawel Parniewski: *New genetic markers differentiating IPEC and ExPEC patotypes. A new approach to genome-wide analysis using a new bioinformatics tool*. 2023.
+This repository contains code and TRS-omix software to search trinucleotide repeat sequences (`TRS`) in files of `FASTA type`. This code accompanies the paper: Marta Majchrzak, Sebastian Sakowski, Jacek Waldmajer, and Pawel Parniewski: *New genetic markers differentiating IPEC and ExPEC patotypes. A new approach to genome-wide analysis using a new bioinformatics tool*. 2023.
 
 ## Basic terminology
 
 * `TRS` means a sequence of three nucleotides, e.g. CCG.
-* `TRS motif` means a sequence of nucleotides, in which there occurs triple repetition (directly one after another) of the same TRS, e.g. CCGCCGCCG.
+* `TRS motif` means a nucleotide sequence in which three TRS sequences of the same type are repeated in tandem, e.g. CCGCCGCCG.
 * `Class of TRS motifs` means TRS motif occurring in one line in the file `trs.txt`, each of which is preceded by the sign „#”, e.g.: #CCGCCGCCG#CGCCGCCGC#GCCGCCGCC.
 * `Number of class of TRS motifs` means a natural number (greater than 0), which corresponds to the number of line in the file `trs.txt`.
-* `Flanking sequence` means a sequence of nucleotides, in which there occurs at least triple repetition (directly one after another) of the same TRS.
-* `Extracted sequence` means a sequence of nucleotides (`SEQ`) which is found between two flanking sequences, one that consists of at least one nucleotide and is not a flanking sequence, e.g. TGCTGGC…CATTTCT.
+* `Flanking sequence` means a sequence of nucleotides, in which there occurs at least triple repetition (repeated in tandem) of the same TRS.
+* `Extracted sequence` means a sequence of nucleotides (`SEQ`) which is found between two flanking sequences, that consists of at least one nucleotide and is not a flanking sequence, e.g. TGCTGGC…CATTTCT.
 * `Left flanking sequence` (`LSF`) means a flanking sequence which is found seen from the site 5’ of an extracted sequence, e.g.  CCGCCGCCG.
 * `Right flanking sequence` (`RSF`) means a flanking sequence which is found seen from the site 3’ of an extracted sequence, e.g. GTGGTGGTG.
 
@@ -94,7 +94,7 @@ The TRS-omix software works with the use of files formed in the `FASTA format`. 
 1. `sequence.fasta`,
 2. `trs.txt`.
 
-The file called sequence.fasta contains a genome of the examined organism, with the use of which the `TRS-omix` search engine searches for microsatellites of the trinucleotide repeats type, and also extracts sequences between such trinucleotide repeats and executes initial analyses of the genome. 
+The file called sequence.fasta contains a genome of the examined organism, with the use of which the `TRS-omix` search engine searches for the trinucleotide repeats, and also extracts sequences between such trinucleotide repeats and executes initial analyses of the genome. 
 The file `trs.txt` contains classified TRS motifs – each line includes TRS motifs preceded by the sign “#”. One such line is identified as one considered class of TRS motifs. In a similar sense, the file called `trs.txt` is treated as a file with a set of search rules in files of the FASTA type.
 
 ### Output file: The output file include:
