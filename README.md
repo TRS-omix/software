@@ -20,7 +20,7 @@ This repository contains code and TRS-omix software to search trinucleotide repe
 
 ## Description of TRS-omix implementation
 The TRS-omix search engine was implemented with the use of a GNU compiler collection called `gcc`, compliant with the ISO 2019 of `language C` in the programmers’ environment, bearing the name Code::Blocks (release 20.03) under license from GNU. Below there are the names of constructed data structures given together with their brief description:
-* `NPt` – data structure serving to store the position of s single nucleotide in the genome and the sign representing this nucleotide.
+* `NPt` – data structure serving to store the position of single nucleotide in the genome and the sign representing this nucleotide.
 * `NLt` – data structure serving to store the data on the genome with the use of data structure `NPt`.
 * `MPt` – data structure serving to store the number of the TRS motifs, the number of the class of TRS motifs and a single sign representing the nucleotide of the TRS motif from the file `trs.txt`.
 * `MLt` – data structure serving to store the TRS motifs contained in the file `trs.txt` with the use of data structure `MPt`.
