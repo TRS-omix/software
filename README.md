@@ -8,7 +8,7 @@
 This repository contains code and TRS-omix software to search trinucleotide repeat sequences (`TRS`) in files of `FASTA type`. This code accompanies the paper:
 
 Marta Majchrzak, Sebastian Sakowski, Jacek Waldmajer, and Pawel Parniewski: *New Genetic Markers Differentiating IPEC and ExPEC Pathotypes—A New Approach to Genome-Wide Analysis Using a New Bioinformatics Tool*. **International Journal of Molecular Sciences** 2023, 24, 4681.
-https://doi.org/10.3390/ijms24054681.
+https://doi.org/10.3390/ijms24054681
 
 ## Basic terminology
 
